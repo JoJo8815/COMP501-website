@@ -1,0 +1,355 @@
+/* ============================================================
+   COMP501 – Deepfakes & AI-Generated Misinformation Website
+   Shared Stylesheet
+   ============================================================ */
+
+/* ── Reset & base ─────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #1a2e2e;
+  background: #f4f9f9;
+}
+
+/* ── Site header banner ───────────────────────────────────── */
+.site-header {
+  background: #0a8080;
+  padding: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-header img {
+  height: 64px;
+  display: block;
+}
+
+.site-header .site-title {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-family: Calibri, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+/* fallback if no header wrapper — legacy img tag */
+body > img:first-child {
+  display: block;
+  height: 60px;
+  background: #0a8080;
+  padding: 6px 16px;
+}
+
+/* ── Navbar ───────────────────────────────────────────────── */
+ul.navbar {
+  list-style: none;
+  background: #076060;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12px;
+  margin: 0;
+}
+
+ul.navbar li a {
+  display: block;
+  color: #e0f2f1;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
+}
+
+ul.navbar li a:hover,
+ul.navbar li a.active {
+  background: #0a8080;
+  color: #ffffff;
+}
+
+/* ── Page wrapper ─────────────────────────────────────────── */
+.page-wrapper {
+  max-width: 980px;
+  margin: 36px auto 60px;
+  padding: 0 28px;
+}
+
+/* ── Page hero ────────────────────────────────────────────── */
+.page-hero {
+  background: #0a8080;
+  color: #ffffff;
+  border-radius: 6px 6px 0 0;
+  padding: 32px 36px 24px;
+  margin-bottom: 0;
+}
+
+.page-hero h1 {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.page-hero .tagline {
+  font-style: italic;
+  font-size: 1rem;
+  color: #b2dfdb;
+}
+
+/* ── Main content card ────────────────────────────────────── */
+.content-card {
+  background: #ffffff;
+  border: 1px solid #c8e6e5;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  padding: 36px;
+  margin-bottom: 28px;
+}
+
+/* ── Section headings ─────────────────────────────────────── */
+h2 {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 1.25rem;
+  color: #076060;
+  margin: 28px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e0f2f1;
+}
+
+h2:first-child { margin-top: 0; }
+
+h3 {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 1.05rem;
+  color: #0a8080;
+  margin: 18px 0 6px;
+}
+
+p { margin-bottom: 14px; }
+
+/* ── Info boxes ───────────────────────────────────────────── */
+.info-box {
+  background: #e0f2f1;
+  border-left: 5px solid #0a8080;
+  border-radius: 0 4px 4px 0;
+  padding: 14px 18px;
+  margin: 18px 0;
+  font-size: 0.97rem;
+}
+
+.info-box.warning {
+  background: #fff3e0;
+  border-left-color: #e65100;
+}
+
+.info-box.danger {
+  background: #fce4e4;
+  border-left-color: #c62828;
+}
+
+/* ── Three-column cards ───────────────────────────────────── */
+.card-row {
+  display: flex;
+  gap: 18px;
+  margin: 22px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: #f4f9f9;
+  border: 1px solid #b2d8d8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card .card-header {
+  background: #0a8080;
+  color: #ffffff;
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  padding: 8px 14px;
+}
+
+.card .card-body {
+  padding: 14px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ── Opportunity / Risk / Choice items ────────────────────── */
+.item-block {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0f2f1;
+}
+
+.item-block:last-child { border-bottom: none; margin-bottom: 0; }
+
+.item-block h3 {
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+}
+
+/* ── Reference list ───────────────────────────────────────── */
+ol.references {
+  padding-left: 22px;
+}
+
+ol.references li {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+ol.references li a {
+  color: #0a8080;
+  word-break: break-all;
+}
+
+/* ── Team member cards ────────────────────────────────────── */
+.team-grid {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.team-card {
+  flex: 1;
+  min-width: 240px;
+  background: #f4f9f9;
+  border: 1px solid #b2d8d8;
+  border-radius: 8px;
+  padding: 22px 20px;
+}
+
+.team-card .role-badge {
+  display: inline-block;
+  background: #0a8080;
+  color: #fff;
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+  color: #076060;
+}
+
+.team-card p {
+  font-size: 0.92rem;
+  margin: 0;
+  color: #3d5c5c;
+}
+
+/* ── Meeting minutes table ────────────────────────────────── */
+table.minutes {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 24px;
+  font-size: 0.93rem;
+}
+
+table.minutes th {
+  background: #0a8080;
+  color: #fff;
+  text-align: left;
+  padding: 9px 13px;
+  font-family: Calibri, Arial, sans-serif;
+}
+
+table.minutes td {
+  padding: 9px 13px;
+  border-bottom: 1px solid #e0f2f1;
+  vertical-align: top;
+}
+
+table.minutes tr:nth-child(even) td { background: #f4f9f9; }
+
+/* ── Guidelines checklist ─────────────────────────────────── */
+ul.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+ul.checklist li {
+  padding: 7px 0 7px 28px;
+  position: relative;
+  border-bottom: 1px solid #e8f5f5;
+  font-size: 0.96rem;
+}
+
+ul.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0a8080;
+  font-weight: bold;
+}
+
+/* ── Footer / address ─────────────────────────────────────── */
+.site-footer {
+  background: #076060;
+  color: #b2dfdb;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.85rem;
+  font-family: Calibri, Arial, sans-serif;
+  margin-top: 48px;
+}
+
+address {
+  font-style: normal;
+  font-size: 0.82rem;
+  color: #5a7a7a;
+  margin-top: 6px;
+}
+
+/* ── Figure / image ───────────────────────────────────────── */
+figure {
+  margin: 22px 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border: 1px solid #c8e6e5;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #5a7a7a;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ── Abstract box on homepage ─────────────────────────────── */
+.abstract-box {
+  background: #e0f2f1;
+  border-radius: 6px;
+  padding: 22px 26px;
+  margin: 22px 0;
+  border-left: 5px solid #0a8080;
+}
+
+.abstract-box h2 {
+  border: none;
+  margin-top: 0;
+  padding: 0 0 6px;
+}
