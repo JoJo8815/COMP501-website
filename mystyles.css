@@ -512,6 +512,39 @@ address {
   margin-top: 4px;
 }
 
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px; 
+  z-index: 1000;
+}
+
+
+ul.navbar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin: 0 !important; 
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.site-header:hover + ul.navbar,
+ul.navbar:hover {
+  top: 64px; 
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  padding-top: 64px !important;
+}
+
 /*  Scrollbar  */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--off-white); }
